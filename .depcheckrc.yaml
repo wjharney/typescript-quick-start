@@ -1,0 +1,5 @@
+ignores:
+  # Contents of the .husky directory are not recognized/parsed by depcheck
+  - "@commitlint/cli" # Used to enforce commit message conventions
+  - "@commitlint/config-conventional" # The commit message conventions to enforce
+  - "husky" # Husky itself!
