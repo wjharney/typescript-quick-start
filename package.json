@@ -20,7 +20,8 @@
     "lint": "yarn check:style",
     "build": "yarn build:types && yarn build:js",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "postinstall": "husky install"
   },
   "commitlint": {
     "extends": [
